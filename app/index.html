@@ -21,37 +21,53 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-
-            <a class="navbar-brand" href="#/">store</a>
-          </div>
-
-          <div class="collapse">
-
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
-            </ul>
-          </div>
-        </div>
+   <md-toolbar>
+    <div class="md-toolbar-tools">
+      <div class="logo">PPH</div>
+      <span flex></span>
+    </div>
+   </md-toolbar>
+   <div>
+      <div layout="row">
+           <md-card>
+        <img ng-src="http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg" />
+         <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">212</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+          <p><small>de R$ 523.90</small></p>
+          <p>por <strong></strong></p>
+        </md-card-content>
+      </md-card>
+       <md-card>
+        <img ng-src="http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg" />
+         <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">212</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+          <p><small>de R$ 523.90</small></p>
+          <p>por <strong></strong></p>
+        </md-card-content>
+      </md-card>
+       <md-card>
+        <img ng-src="http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg" />
+         <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">212</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+          <p><small>de R$ 523.90</small></p>
+          <p>por <strong></strong></p>
+        </md-card-content>
+      </md-card>
       </div>
+     
     </div>
-
-    <div class="container">
-    <div ng-view=""></div>
-    </div>
-
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
-    </div>
-
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){

@@ -8,7 +8,7 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css"/>
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
@@ -27,70 +27,7 @@
     <span flex></span>
   </div>
 </md-toolbar>
-<section layout="row" flex>
-  <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="true" layout-fill>
-    <md-toolbar class="md-theme-indigo">
-      <h1 class="md-toolbar-tools">Filtros</h1>
-    </md-toolbar>
-    <md-content layout-padding>
-      a
-    </md-content>
-  </md-sidenav>
-  <md-content flex layout-margin layout-padding>
-    <div layout="row">
-      <md-input-container flex="fill">
-        <label>Search</label>
-        <input type="text" ng-model="search">
-      </md-input-container>
-    </div>
-    <div layout="row">
-      <md-card>
-        <img
-          ng-src="http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg"/>
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline">212</span>
-          </md-card-title-text>
-        </md-card-title>
-        <md-card-content>
-          <p>
-            <small>de R$ 523.90</small>
-          </p>
-          <p>por <strong>R$ 320.00</strong></p>
-        </md-card-content>
-      </md-card>
-      <md-card>
-        <img
-          ng-src="http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg"/>
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline">212</span>
-          </md-card-title-text>
-        </md-card-title>
-        <md-card-content>
-          <p>
-            <small>de R$ 523.90</small>
-          </p>
-          <p>por <strong>R$ 320.00</strong></p>
-        </md-card-content>
-      </md-card>
-      <md-card>
-        <img
-          ng-src="http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg"/>
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline">212</span>
-          </md-card-title-text>
-        </md-card-title>
-        <md-card-content>
-          <p>
-            <small>de R$ 523.90</small>
-          </p>
-          <p>por <strong>R$ 320.00</strong></p>
-        </md-card-content>
-      </md-card>
-    </div>
-  </md-content>
+<ng-view></ng-view>
 </section>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
 <script>
@@ -124,6 +61,8 @@
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
 <script src="scripts/controllers/about.js"></script>
+<script src="scripts/controllers/product.js"></script>
+<script src="scripts/services/product.js"></script>
 <!-- endbuild -->
 </body>
 </html>

@@ -27,11 +27,23 @@
       <span flex></span>
     </div>
    </md-toolbar>
-   <div layout="row">
-      <div flex="30">
-      </div>
-      <div flex="70">
-        <div layout="row" layout-margin layout-padding>
+   <section layout="row" flex>
+     <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="true" layout-fill> 
+        <md-toolbar class="md-theme-indigo">
+          <h1 class="md-toolbar-tools">Filtros</h1>
+        </md-toolbar>
+        <md-content layout-padding>
+          a
+        </md-content>
+      </md-sidenav>
+      <md-content flex layout-margin layout-padding>
+        <div layout="row">
+          <md-input-container flex="fill">
+            <label>Search</label>
+            <input type="text" ng-model="search">
+          </md-input-container>
+        </div>
+        <div layout="row" >
           <md-card>
             <img ng-src="http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg" />
             <md-card-title>
@@ -69,9 +81,8 @@
             </md-card-content>
           </md-card>
         </div>
-      
-      </div>    
-    </div>
+      </md-content>
+  </section>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){

@@ -1,4 +1,4 @@
-<section layout="row" flex>
+<section layout="row">
   <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="true" layout-fill>
     <md-toolbar class="md-theme-indigo">
       <h1 class="md-toolbar-tools">Filtros</h1>
@@ -7,7 +7,7 @@
       a
     </md-content>
   </md-sidenav>
-  <md-content layout-margin layout-padding>
+  <md-content flex layout-margin layout-padding>
     <div layout="row">
       <md-input-container flex="fill">
         <label>Search</label>
@@ -18,17 +18,17 @@
     	<div flex="25" ng-repeat="product in products">
     		<md-card>
 	        <img
-	          ng-src="http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg"/>
+	          ng-src="{{ product.photo }}"/>
 	        <md-card-title>
 	          <md-card-title-text>
-	            <span class="md-headline">212</span>
+	            <span class="md-headline">{{ product.name }}</span>
 	          </md-card-title-text>
 	        </md-card-title>
 	        <md-card-content>
 	          <p>
-	            <small>de R$ 523.90</small>
+	            <small>de R$ {{ product.variance | currency }}</small>
 	          </p>
-	          <p>por <strong>R$ 320.00</strong></p>
+	          <p>por <strong>R$ {{ product.price | currency }}</strong></p>
 	        </md-card-content>
 	      </md-card>
     	</div>

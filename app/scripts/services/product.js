@@ -15,7 +15,90 @@ angular.module('storeApp')
     var product = {
       all: function(){
         return [
-          1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+          {
+            photo: 'http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg',
+            name: '212',
+            price: 320,
+            variance: 320 * (((Math.floor(Math.random() * 30) + 20) / 100)+1)
+          },
+          {
+            photo: 'http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg',
+            name: '212',
+            price: 320,
+            variance: 320 * (((Math.floor(Math.random() * 30) + 20) / 100)+1)
+          },
+          {
+            photo: 'http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg',
+            name: '212',
+            price: 320,
+            variance: 320 * (((Math.floor(Math.random() * 30) + 20) / 100)+1)
+          },
+          {
+            photo: 'http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg',
+            name: '212',
+            price: 320,
+            variance: 320 * (((Math.floor(Math.random() * 30) + 20) / 100)+1)
+          },
+          {
+            photo: 'http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg',
+            name: '212',
+            price: 320,
+            variance: 320 * (((Math.floor(Math.random() * 30) + 20) / 100)+1)
+          },
+          {
+            photo: 'http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg',
+            name: '212',
+            price: 320,
+            variance: 320 * (((Math.floor(Math.random() * 30) + 20) / 100)+1)
+          },
+          {
+            photo: 'http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg',
+            name: '212',
+            price: 320,
+            variance: 320 * (((Math.floor(Math.random() * 30) + 20) / 100)+1)
+          },
+          {
+            photo: 'http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg',
+            name: '212',
+            price: 320,
+            variance: 320 * (((Math.floor(Math.random() * 30) + 20) / 100)+1)
+          },
+          {
+            photo: 'http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg',
+            name: '212',
+            price: 320,
+            variance: 320 * (((Math.floor(Math.random() * 30) + 20) / 100)+1)
+          },
+          {
+            photo: 'http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg',
+            name: '212',
+            price: 320,
+            variance: 320 * (((Math.floor(Math.random() * 30) + 20) / 100)+1)
+          },
+          {
+            photo: 'http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg',
+            name: '212',
+            price: 320,
+            variance: 320 * (((Math.floor(Math.random() * 30) + 20) / 100)+1)
+          },
+          {
+            photo: 'http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg',
+            name: '212',
+            price: 320,
+            variance: 320 * (((Math.floor(Math.random() * 30) + 20) / 100)+1)
+          },
+          {
+            photo: 'http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg',
+            name: '212',
+            price: 320,
+            variance: 320 * (((Math.floor(Math.random() * 30) + 20) / 100)+1)
+          },
+          {
+            photo: 'http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg',
+            name: '212',
+            price: 320,
+            variance: 320 * (((Math.floor(Math.random() * 30) + 20) / 100)+1)
+          }
         ];
       }
     };

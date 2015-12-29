@@ -19,7 +19,8 @@ angular
     'ngTouch',
     'ngMaterial'
   ])
-  .config(function ($routeProvider, $mdThemingProvider) {
+  .config(function ($routeProvider, $mdThemingProvider, $mdIconProvider) {
+    $mdIconProvider.defaultIconSet('/styles/icons/mdi.svg');
     $mdThemingProvider.theme('default');
 
     $routeProvider

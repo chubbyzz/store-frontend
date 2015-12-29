@@ -4,6 +4,9 @@
       <h1 class="md-toolbar-tools">Filtros</h1>
     </md-toolbar>
     <md-content layout-padding>
+      <h3>Preço</h3>
+      <md-slider md-discrete  min="0" max="500"></md-slider>
+      <md-divider></md-divider>
       <h3>Marca</h3>
       <md-select ng-model="filter.brand" multiple="true" placeholder="Marca">
         <md-option ng-value="1">brand 1 (2)</md-option>

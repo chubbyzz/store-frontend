@@ -26,12 +26,12 @@ angular
       .when('/', {
         templateUrl: 'views/product/index.html',
         controller: 'ProductCtrl',
-        controllerAs: 'main'
+        controllerAs: 'product'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+      .when('/product/:name', {
+        templateUrl: 'views/product/show.html',
+        controller: 'ProductshowCtrl',
+        controllerAs: 'productShow'
       })
       .otherwise({
         redirectTo: '/'

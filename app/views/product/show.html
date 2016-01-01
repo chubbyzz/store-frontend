@@ -1,0 +1,14 @@
+<md-content layout="row" layout-padding layout-margin>
+    <span flex="5"></span>
+    <div flex="40" layout="row">
+        <div flex="20" layout="column" layout-wrap>
+            <a  flex="25" ng-click="changeImage(photo)" ng-repeat="photo in product.photos">
+                <img layout-padding style="height: 100px"
+                  ng-src="{{ photo }}" />
+            </a>
+
+        </div>
+        <img flex="fill" style="height: 400px"
+          ng-src="{{ product.main }}"/>
+    </div>
+</md-content>

@@ -3,6 +3,30 @@
     height: 48px;
     width: 48px;
 }
-.blue-icon{
-    color:#4aa3df;
+.teal-icon{
+    color:#B2DFDB;
+}
+
+.facebook-color{
+     background-color: #3b5998 !important;
+     color:white !important;
+}
+
+.google-color{
+     background-color: #dd4b39 !important;
+     color:white !important;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.img-small {
+    width: 50px;
 }

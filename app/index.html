@@ -23,11 +23,26 @@
 <!-- Add your site or application content here -->
 <md-toolbar>
   <div class="md-toolbar-tools">
-    <div class="logo">PPH</div>
+    <a class="logo" ng-href="#/">PPH</a>
     <span flex></span>
-    <div> <md-button>
-
-    </md-button></div>
+        <md-button ng-href="#/login">Entrar</md-button>
+        <img class="img-circle img-responsive img-small" ng-src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10409119_578150598954114_5280743735815687629_n.jpg?oh=6c2879c250669499d8ad92fa587c22ee&oe=5746036F&__gda__=1460838835_4bf36f126bd1d18f028a52da8cfa68b2" />
+        <a layout-margin>Jefferson Rossi</a>
+        <md-menu md-position-mode="target-right target">
+            <md-button ng-click="$mdOpenMenu($event)" class="md-icon-button">
+                <md-icon md-svg-icon="menu"></md-icon>
+            </md-button>
+                <md-menu-content width="4">
+                    <md-menu-item>
+                        <md-button>Minhas compras</md-button>
+                    </md-menu-item>
+                    <md-menu-divider></md-menu-divider>
+                    <md-menu-item>
+                        <md-button><md-icon md-svg-icon="exit-to-app"></md-icon> Sair</md-button>
+                    </md-menu-item>
+                </md-menu-content>
+            </md-button>
+        </md-menu>
   </div>
 </md-toolbar>
 <ng-view></ng-view>

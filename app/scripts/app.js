@@ -21,7 +21,9 @@ angular
   ])
   .config(function ($routeProvider, $mdThemingProvider, $mdIconProvider) {
     $mdIconProvider.defaultIconSet('/styles/icons/mdi.svg');
-    $mdThemingProvider.theme('default');
+    $mdThemingProvider.theme('default')
+        // .primaryPalette('blue-grey');
+        .primaryPalette('teal');
 
     $routeProvider
       .when('/', {

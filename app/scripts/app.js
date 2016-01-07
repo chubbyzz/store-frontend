@@ -28,18 +28,23 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/product/index.html',
-        controller: 'ListCtrl',
-        controllerAs: 'product'
+        controller: 'MainCtrl'
       })
       .when('/product/:name', {
         templateUrl: 'views/product/show.html',
-        controller: 'ProductshowCtrl',
-        controllerAs: 'productShow'
+        controller: 'MainCtrl'
       })
-      .when('/login', {
+      .when('/entrar', {
         templateUrl: 'views/login/index.html',
-        controller: 'LoginCtrl',
-        controllerAs: 'login'
+        controller: 'MainCtrl'
+      })
+      .when('/carrinho', {
+          templateUrl: 'views/carrinho/index.html',
+          controller: 'MainCtrl'
+      })
+      .when('/registrar', {
+          templateUrl: 'views/404.html',
+          controller: 'MainCtrl'
       })
       .otherwise({
         redirectTo: '/'

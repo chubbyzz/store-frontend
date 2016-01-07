@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name storeApp.controller:ProductCtrl
+ * @name storeApp.controller:ListCtrl
  * @description
- * # ProductCtrl
+ * # ListCtrl
  * Controller of the storeApp
  */
 angular.module('storeApp')
-  .controller('ProductCtrl', function ($scope, productFactory) {
+  .controller('ListCtrl', function ($scope, productFactory) {
   	$scope.products = productFactory.all();
 
   });

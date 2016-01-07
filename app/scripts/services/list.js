@@ -25,8 +25,8 @@ angular.module('storeApp')
             variance: 320 * (((Math.floor(Math.random() * 30) + 20) / 100) + 1)
           }, {
             photo: 'http://i.mlcdn.com.br/470x352/carolina-herrera-212-vip-menperfume-masculino-eau-de-toilette-50-ml-207457300.jpg',
-            name: '212',
-            slug: '212',
+            name: '212 VIP',
+            slug: '212-vip',
             price: 320,
             variance: 320 * (((Math.floor(Math.random() * 30) + 20) / 100) + 1)
           }, {

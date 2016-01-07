@@ -1,0 +1,21 @@
+<md-content layout="row">
+    <span flex="35"></span>
+    <form layout="column" flex="30" layout-margin layout padding>
+        <span flex="40"></span>
+        <h3><md-icon class="big-icon blue-icon" md-svg-src="account-circle"></md-icon> Login</h3>
+        <md-input-container>
+            <legal>E-mail</label>
+            <input type="email" ng-model='login.email'/>
+        </md-input-container>
+        <md-input-container>
+            <label>Senha</label>
+            <input type="password" ng-model='login.senha' />
+        </md-input-container>
+        <div>
+            <a ng-href="#/forgot/password">Esqueceu sua senha?</a>
+        </div>
+        <div layout layout-align="end">
+            <md-button class="md-raised">LOGIN</md-button>
+        </div>
+    </from>
+</md-content>

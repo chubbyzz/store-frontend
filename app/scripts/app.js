@@ -19,19 +19,25 @@ angular
     'ngTouch',
     'ngMaterial'
   ])
-  .config(function ($routeProvider, $mdThemingProvider) {
+  .config(function ($routeProvider, $mdThemingProvider, $mdIconProvider) {
+    $mdIconProvider.defaultIconSet('/styles/icons/mdi.svg');
     $mdThemingProvider.theme('default');
 
     $routeProvider
       .when('/', {
         templateUrl: 'views/product/index.html',
-        controller: 'ProductCtrl',
+        controller: 'ListCtrl',
         controllerAs: 'product'
       })
       .when('/product/:name', {
         templateUrl: 'views/product/show.html',
         controller: 'ProductshowCtrl',
         controllerAs: 'productShow'
+      })
+      .when('/login', {
+        templateUrl: 'views/login/index.html',
+        controller: 'LoginCtrl',
+        controllerAs: 'login'
       })
       .otherwise({
         redirectTo: '/'

@@ -4,34 +4,67 @@
       <h1 class="md-toolbar-tools">Filtros</h1>
     </md-toolbar>
     <md-content layout-padding>
-      a
+      <h3>Preço</h3>
+      <md-slider md-discrete  min="0" max="500"></md-slider>
+      <md-divider></md-divider>
+      <h3>Marca</h3>
+      <md-select ng-model="filter.brand" multiple="true" placeholder="Marca">
+        <md-option ng-value="1">brand 1 (2)</md-option>
+        <md-option ng-value="2">brand 1 (10)</md-option>
+        <md-option ng-value="3">brand 1 (3)</md-option>
+      </md-select>
+      <md-divider></md-divider>
+      <h3>Tipo</h3>
+      <md-select ng-model="filter.type" multiple="true" placeholder="Tipo">
+        <md-option ng-value="1">Citrico (3)</md-option>
+        <md-option ng-value="2">Doce (1)</md-option>
+        <md-option ng-value="3">Forte (6)</md-option>
+      </md-select>
+      <md-divider></md-divider>
+      <h3>Ocasião</h3>
+      <md-select ng-model="filter.ocasion" multiple="true" placeholder="Ocasião">
+        <md-option ng-value="1">Casual (10)</md-option>
+        <md-option ng-value="2">Balada (12)</md-option>
+      </md-select>
+
+
     </md-content>
   </md-sidenav>
   <md-content flex layout-margin layout-padding>
     <div layout="row">
       <md-input-container flex="fill">
         <label>Search</label>
-        <input type="text" ng-model="search">
+        <input type="text" ng-model="search.name">
+      </md-input-container>
+      <md-input-container>
+        <label>Ordem</label>
+        <md-select ng-model="filter.ocasion" placeholder="">
+          <md-option ng-value="important">Relevancia</md-option>
+          <md-option ng-value="most-tipper">Menor preço</md-option>
+          <md-option ng-value="most-expencive">Maior preço</md-option>
+          <md-option ng-value="name-asc">Nome (A-Z)</md-option>
+          <md-option ng-value="name-desc">Nome (Z-A)</md-option>
+        </md-select>
       </md-input-container>
     </div>
-    <div layout="row" ng-controller="ProductCtrl"  layout-wrap>
-    	<div flex="25" ng-repeat="product in products">
-    		<md-card>
-	        <img
-	          ng-src="{{ product.photo }}"/>
-	        <md-card-title>
-	          <md-card-title-text>
-	            <span class="md-headline">{{ product.name }}</span>
-	          </md-card-title-text>
-	        </md-card-title>
-	        <md-card-content>
-	          <p>
-	            <small>de R$ {{ product.variance | currency }}</small>
-	          </p>
-	          <p>por <strong>R$ {{ product.price | currency }}</strong></p>
-	        </md-card-content>
-	      </md-card>
-    	</div>
+    <div layout="row" ng-controller="ListCtrl" layout-wrap>
+      <div flex="25" ng-repeat="product in products | filter: search">
+        <md-card>
+          <img
+            ng-src="{{ product.photo }}"/>
+          <md-card-title>
+            <md-card-title-text>
+              <span class="md-headline">{{ product.name }}</span>
+            </md-card-title-text>
+          </md-card-title>
+          <md-card-content>
+            <p>
+              <small>de R$ {{ product.variance | currency }}</small>
+            </p>
+            <p>por <strong>R$ {{ product.price | currency }}</strong></p>
+          </md-card-content>
+        </md-card>
+      </div>
     </div>
   </md-content>
 </section>

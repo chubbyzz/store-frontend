@@ -17,6 +17,14 @@
      color:white !important;
 }
 
+.md-buttom-teal{
+    background-color: #4DB6AC !important;
+    color:white !important;
+}
+.point{
+    color: #FFC107;
+}
+
 .img-responsive {
     display: block;
     max-width: 100%;

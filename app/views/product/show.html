@@ -1,14 +1,34 @@
 <md-content layout="row" layout-padding layout-margin>
     <span flex="5"></span>
-    <div flex="40" layout="row">
-        <div flex="20" layout="column" layout-wrap>
-            <a  flex="25" ng-click="changeImage(photo)" ng-repeat="photo in product.photos">
-                <img layout-padding style="height: 100px"
-                  ng-src="{{ photo }}" />
-            </a>
-
+    <md-card flex="90" layout="row">
+        <div flex="50" layout="row">
+            <div flex="20" layout="column" layout-wrap>
+                <a  flex="25" ng-click="changeImage(photo)" ng-repeat="photo in product.photos">
+                    <img class="img-responsive" layout-padding style="height: 100px"
+                      ng-src="{{ photo }}" />
+                </a>
+            </div>
+            <img class="img-responsive" flex="fill" style="height: 400px"
+              ng-src="{{ product.main }}"/>
         </div>
-        <img flex="fill" style="height: 400px"
-          ng-src="{{ product.main }}"/>
-    </div>
+        <div flex="50" layout="column" layout-align="space-around">
+            <h1>
+                {{ product.name }}<br>
+                <small><md-icon ng-repeat="class in [1,2,3,4,5]" md-svg-src="star" ng-class="class"></md-icon></small>
+            </h1>
+            <div>
+                <p>
+                    <small>{{ product.variance | currency }}</small>
+                </p>
+                <p>
+                    <strong>{{ product.price | currency }}</strong>
+                </p>
+            </div>
+            <md-button class="md-raised md-buttom-teal">Comprar</md-button>
+        </div>
+    </md-card>
 </md-content>
+
+<div>
+    <!-- coments -->
+</div>

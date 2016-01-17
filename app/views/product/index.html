@@ -5,7 +5,7 @@
     </md-toolbar>
     <md-content layout-padding>
       <h3>Preço</h3>
-      <md-slider md-discrete  min="0" max="500"></md-slider>
+      <md-slider md-discrete min="0" max="500"></md-slider>
       <md-divider></md-divider>
       <h3>Marca</h3>
       <md-select ng-model="filter.brand" multiple="true" placeholder="Marca">
@@ -26,7 +26,6 @@
         <md-option ng-value="1">Casual (10)</md-option>
         <md-option ng-value="2">Balada (12)</md-option>
       </md-select>
-
 
     </md-content>
   </md-sidenav>
@@ -50,18 +49,23 @@
     <div layout="row" ng-controller="ListCtrl" layout-wrap>
       <div flex="25" ng-repeat="product in products | filter: search">
         <md-card>
-          <img
-            ng-src="{{ product.photo }}"/>
+          <a ng-href="#/product/{{ product.slug}}">
+            <img ng-src="{{ product.photo }}"/>
+          </a>
           <md-card-title>
             <md-card-title-text>
-              <span class="md-headline">{{ product.name }}</span>
+              <a ng-href="#/product/{{ product.slug}}" class="md-headline">{{ product.name }}</a>
             </md-card-title-text>
           </md-card-title>
           <md-card-content>
             <p>
-              <small>de R$ {{ product.variance | currency }}</small>
+              <small>de R$
+                {{ product.variance | currency }}</small>
             </p>
-            <p>por <strong>R$ {{ product.price | currency }}</strong></p>
+            <p>por
+              <strong>R$
+                {{ product.price | currency }}</strong>
+            </p>
           </md-card-content>
         </md-card>
       </div>
